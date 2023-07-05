@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0e0200162a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Project</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                    <i class="" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full stack web developer</p>
+                <h1>Hi,I'm<span> Anurag</span><br></h1>
+            </div>
+        </div>
+    </div>
+    <!------------------about------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p style="color:red;">I Am ALWAYS INTRESTED TO BUILDING AND LEARNING NEW THINGS.</p>
+                    <P>
+                    <p style="color:rgb(10, 255, 214);">Currently I am available at One True Web Software Solutions as a
+                     Full Stack Web   developer trainee
+                        & having Hands-on knowledge in Mern Stack</p>
+                    <p style="color:blue;">-------------------------------------Tech
+                        Skills----------------------------------------------</p>
+                    <p style="color:rgb(187, 255, 0);">I'm a quick learner and a Full Stack Web developer with core
+                        Knowledge of Mern Stack Technology. I'm an enthusiastic, self- Motivated and ambitious Web
+                        Developer, with Proficiency in React,HTML,CSS and Javascript.
+                        problem-solving mindest and the ability to perform well in collaboration.
+                        High adaptability to learn new Things
+                        Looking for a Challenging career to show the best of my Proffesional ability. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('still learn')">Still learn</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI?UX</span><br>designer</li>
+                            <li><span>App development</span><br>web developer</li>
+                            <li><span>web development</span><br>designing web application</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="still learn">
+                        <ul>
+                            <li><span>java Framework</span><br>As a Learner</li>
+                            <li><span>laravel Framework</span><br>As a Learner</li>
+                            <li><span>Python Django</span><br>As a Learner</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022(still Running)</span><br>Full Stack Web Development</li>
+                            <li><span>2018/2021</span><br>B.TECH</li>
+                            <li><span>2013/2015</span><br>Intermidiate</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------services-------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web designing is the process of planning, conceptualizing, and implementing the plan for
+                        designing a website in a way that is functional and offers a good user experience. User
+                       for most useful web design</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX design</h2>
+                    <p>UI refers to the screens, buttons, toggles, icons, and other visual elements that you interact
+                        with when using a website, app, or other electronic device. UX refers to the entire interaction
+                        you have with a product, including how you feel about the interaction.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>App design is an ongoing process comprising user experience (UX) and user interface (UI)
+                        elements. Designers ideate, define solutions, create the app's flow and structure, and make
+                        stylistic choices from colors to fonts.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  --------------------------------------------project------------------------------------------ -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Movie App</h3>
+                        <p>A mini IMDB clone app in which we can search movies based on OMDB API, with search
+                            suggestions. Clicking on a particular movie card opens a new movie page ...
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>You Tube Clone App</h3>
+                        <p>Youtube Clone is a video streaming platform that is similar to the original app, Youtube. The
+                            live streaming software helps startups to set up their Youtube clone website or application
+                            faster. </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Gipphy Clone App</h3>
+                        <p>This article is for the React Beginners who wants to create something cool using there React
+                            skills. We are basically gonna create a Giphy clone here.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!--------------------------------------------contact---------------------------------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i></i>anuragpandey1526@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+916307743214</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Skillsqulresume (104) (1).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @<i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getelementById("sidemenu");
+
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwUzx5REYRsKbvPjBQ-kWtdlWswkO2sH1fHtfhnjeEtNt8oyr2-60ptVniwvDtbsx-s/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHtml = "Message sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHtml = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
